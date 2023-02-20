@@ -954,7 +954,7 @@ body {
   }
 
   .first-screen__container {
-    padding-bottom: 2.75rem;
+    padding-bottom: 2.75rem !important;
   }
 
   .first-screen__links {
@@ -978,7 +978,7 @@ body {
   }
 
   .second-screen__container {
-    padding-top: 3.75rem;
+    padding-top: 3.75rem !important;
   }
 
   .second-screen__title {
