@@ -571,6 +571,7 @@ body {
 }
 
 .second-screen {
+  position: relative;
   background: url("../img/bg.svg") 0 0 no-repeat;
   background-size: cover;
   position: relative;
@@ -590,8 +591,14 @@ body {
   z-index: -1;
 }
 
+.second-screen .v {
+  position: absolute;
+  right: 0.9375rem;
+  bottom: 2.5rem;
+  width: 28vw;
+}
+
 .second-screen__container {
-  padding-top: 18.75rem;
   padding-bottom: 6.25rem;
 }
 
@@ -622,7 +629,7 @@ body {
   line-height: 173%;
   letter-spacing: 0.01em;
   color: #F7F7F7;
-  max-width: 65.9375rem;
+  width: 57vw;
 }
 
 .anim-upwards {
@@ -645,10 +652,6 @@ body {
 @media (min-width: 30.06125em) {
   .footer {
     margin-top: -1.25rem;
-  }
-
-  .second-screen {
-    margin-top: -15px;
   }
 }
 
@@ -764,7 +767,7 @@ body {
   }
 
   .second-screen__container {
-    padding-top: 9.375rem;
+    padding-top: 5rem;
   }
 
   .second-screen__title {
@@ -773,6 +776,18 @@ body {
 
   .second-screen__text {
     font-size: 1.0625rem;
+  }
+}
+
+@media (max-width: 106.25em) {
+  .second-screen__text {
+    width: 61vw;
+  }
+}
+
+@media (max-width: 81.25em) {
+  .second-screen__text {
+    width: 65vw;
   }
 }
 
@@ -910,11 +925,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-
-  .second-screen {
-    background: url("../img/bg.svg") 100% 0 no-repeat;
-    background-size: cover;
-  }
 }
 
 @media (max-width: 62.06125em) and (any-hover: none) {
@@ -972,6 +982,29 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .second-screen {
+    background: url("../img/bg-mini.svg") 0 0 no-repeat;
+    background-size: cover;
+    padding-bottom: 12.5rem;
+  }
+
+  .second-screen .v {
+    width: 12.875rem;
+    right: calc(50% - 6.4375rem);
+  }
+
+  .second-screen__container {
+    padding-bottom: 3.125rem;
+  }
+
+  .second-screen__title {
+    text-align: center;
+  }
+
+  .second-screen__text {
+    width: 100%;
+  }
 }
 
 @media (max-width: 30.06125em) {
@@ -993,23 +1026,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .second-screen {
-    background: url("../img/bg-mini.svg") 0 0 no-repeat;
-    background-size: cover;
-  }
-
-  .second-screen__container {
-    padding-bottom: 11.875rem;
-  }
-
-  .second-screen__container {
-    padding-top: 3.75rem !important;
-  }
-
-  .second-screen__title {
-    text-align: center;
   }
 }
 
@@ -1100,15 +1116,15 @@ body {
     }
 }
 
-@supports (padding-top: clamp( 9.375rem , 7.0673076923rem  +  11.5384615385vw , 18.75rem )) {
+@supports (padding-top: clamp( 5rem , 1.6153846154rem  +  16.9230769231vw , 18.75rem )) {
     .second-screen__container {
-      padding-top: clamp( 9.375rem , 7.0673076923rem  +  11.5384615385vw , 18.75rem );
+      padding-top: clamp( 5rem , 1.6153846154rem  +  16.9230769231vw , 18.75rem );
     }
 }
 
-@supports not (padding-top: clamp( 9.375rem , 7.0673076923rem  +  11.5384615385vw , 18.75rem )) {
+@supports not (padding-top: clamp( 5rem , 1.6153846154rem  +  16.9230769231vw , 18.75rem )) {
     .second-screen__container {
-      padding-top: calc(9.375rem + 9.375 * (100vw - 20rem) / 81.25);
+      padding-top: calc(5rem + 13.75 * (100vw - 20rem) / 81.25);
     }
 }
 
