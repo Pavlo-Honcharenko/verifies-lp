@@ -259,6 +259,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 3.125rem;
+  margin-bottom: 1.875rem;
 }
 
 .menu__item {
@@ -611,7 +612,8 @@ body {
   position: absolute;
   right: 0.9375rem;
   bottom: 2.5rem;
-  width: 28vw;
+  width: 26.5vw;
+  max-width: 32.1875rem;
 }
 
 .second-screen__container {
@@ -648,6 +650,7 @@ body {
   letter-spacing: 0.01em;
   color: #F7F7F7;
   width: 57vw;
+  max-width: 82.5rem;
 }
 
 .anim-upwards {
@@ -709,7 +712,7 @@ body {
   }
 
   .second-screen__container {
-    padding-top: 16.25rem;
+    padding-top: 15rem;
   }
 }
 
@@ -1022,6 +1025,10 @@ body {
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
   }
+
+  .second-screen .v {
+    bottom: 6.875rem;
+  }
 }
 
 @media (max-width: 62.06125em) and (any-hover: none) {
@@ -1095,6 +1102,7 @@ body {
   .second-screen .v {
     width: 12.875rem;
     right: calc(50% - 6.4375rem);
+    bottom: 2.5rem;
   }
 
   .second-screen__container {
@@ -1491,15 +1499,15 @@ body {
     }
 }
 
-@supports (padding-top: clamp( 5rem , 2.2307692308rem  +  13.8461538462vw , 16.25rem )) {
+@supports (padding-top: clamp( 5rem , 2.5384615385rem  +  12.3076923077vw , 15rem )) {
     .second-screen__container {
-      padding-top: clamp( 5rem , 2.2307692308rem  +  13.8461538462vw , 16.25rem );
+      padding-top: clamp( 5rem , 2.5384615385rem  +  12.3076923077vw , 15rem );
     }
 }
 
-@supports not (padding-top: clamp( 5rem , 2.2307692308rem  +  13.8461538462vw , 16.25rem )) {
+@supports not (padding-top: clamp( 5rem , 2.5384615385rem  +  12.3076923077vw , 15rem )) {
     .second-screen__container {
-      padding-top: calc(5rem + 11.25 * (100vw - 20rem) / 81.25);
+      padding-top: calc(5rem + 10 * (100vw - 20rem) / 81.25);
     }
 }
 }
