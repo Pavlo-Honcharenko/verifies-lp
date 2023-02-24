@@ -259,7 +259,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 3.125rem;
-  margin-bottom: 1.875rem;
 }
 
 .menu__item {
@@ -945,6 +944,10 @@ body {
 
   .menu__body .menu__list .menu__link {
     font-size: 1.375rem;
+  }
+
+  .menu__list {
+    margin-bottom: 1.875rem;
   }
 
   .icon-menu {
